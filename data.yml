@@ -2,25 +2,55 @@ defaultStorageMapping: DEV_RAW
 jobs: {}
 locations:
   DEV_DATA_MART:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DEV_NOLANC_V_6_0
+        schema: DEV_DATA_MART
   DEV_RAW:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DEV_NOLANC_V_6_0
+        schema: DEV_RAW
   DEV_STAGING:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DEV_NOLANC_V_6_0
+        schema: DEV_STAGING
   PROD_DATA_MART:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DEV_NOLANC_V_6_0
+        schema: PROD_DATA_MART
   PROD_RAW:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DEV_NOLANC_V_6_0
+        schema: PROD_DATA_MART
   PROD_STAGING:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DEV_NOLANC_V_6_0
+        schema: PROD_STAGING
   QA_DATA_MART:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DEV_NOLANC_V_6_0
+        schema: QA_DATA_MART
   QA_RAW:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DEV_NOLANC_V_6_0
+        schema: QA_RAW
   QA_STAGING:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DEV_NOLANC_V_6_0
+        schema: QA_STAGING
   WORK:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: COALESCE_SAMPLE_DATABASE
+        schema: TPCH_SF001
 macros: {}
 packages: {}
 projects: {}
