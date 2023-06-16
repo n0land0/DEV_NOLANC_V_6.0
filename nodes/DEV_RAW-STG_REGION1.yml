@@ -1,0 +1,147 @@
+steps:
+  STG_REGION1-409acda5-29a8-4224-92d0-29cf28a7d105:
+    operation:
+      config:
+        insertStrategy: INSERT
+        myTabularConfig:
+          items:
+            - myColumnDropdown: null
+              myDropdown: null
+              myToggleButton2: true
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: DEV_RAW
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b876d44c-e35c-411d-ae61-6267bbd71e69
+              stepCounter: 409acda5-29a8-4224-92d0-29cf28a7d105
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKeyTest: true
+            name: STG_REGION1_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8709d36d-f064-4308-a396-ac25b95e1bd9
+              stepCounter: 409acda5-29a8-4224-92d0-29cf28a7d105
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKeyTest: true
+            name: STG_REGION1_anus
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 39e068eb-1bd1-4c95-ab4a-7deaa77bbd32
+              stepCounter: 409acda5-29a8-4224-92d0-29cf28a7d105
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STG_REGION_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6b9fc1b6-4f5e-42c2-befd-6a344710184f
+                    stepCounter: c0cf951d-cde1-4b2a-9945-8ee5cde0c955
+                transform: ""
+          - columnReference:
+              columnCounter: 17f93444-8b8f-454b-a626-b28a63b5069e
+              stepCounter: 409acda5-29a8-4224-92d0-29cf28a7d105
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STG_REGION_anus
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a1473931-3e1a-4a87-a17a-87467dbff2e5
+                    stepCounter: c0cf951d-cde1-4b2a-9945-8ee5cde0c955
+                transform: ""
+          - columnReference:
+              columnCounter: a237b31a-0ab2-4f5c-a603-dba59bba2afc
+              stepCounter: 409acda5-29a8-4224-92d0-29cf28a7d105
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: R_REGIONKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 515eac21-3a64-4d5f-bfc9-3c8336dfa12c
+                    stepCounter: c0cf951d-cde1-4b2a-9945-8ee5cde0c955
+                transform: ""
+          - columnReference:
+              columnCounter: 06062e47-63f7-4f5b-b0d2-cee120a66e24
+              stepCounter: 409acda5-29a8-4224-92d0-29cf28a7d105
+            dataType: VARCHAR(25)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: R_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 29c7fc66-2df7-4491-a711-1ab6a9d1153f
+                    stepCounter: c0cf951d-cde1-4b2a-9945-8ee5cde0c955
+                transform: ""
+          - columnReference:
+              columnCounter: 66feecd8-7db3-401f-9030-2723272ec87e
+              stepCounter: 409acda5-29a8-4224-92d0-29cf28a7d105
+            dataType: VARCHAR(152)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: R_COMMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: be1b05cf-b96c-4fe5-9fd3-18867cd684d7
+                    stepCounter: c0cf951d-cde1-4b2a-9945-8ee5cde0c955
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DEV_RAW
+                nodeName: STG_REGION
+            join:
+              joinCondition: FROM {{ ref('DEV_RAW', 'STG_REGION') }} "STG_REGION"
+            name: STG_REGION1
+            noLinkRefs: []
+      name: STG_REGION1
+      overrideSQL: false
+      schema: ""
+      sqlType: "1"
+      type: sql
+    stepCounter: 409acda5-29a8-4224-92d0-29cf28a7d105

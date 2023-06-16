@@ -1,0 +1,119 @@
+steps:
+  STG_REGION-c0cf951d-cde1-4b2a-9945-8ee5cde0c955:
+    operation:
+      config:
+        insertStrategy: INSERT
+        myTabularConfig:
+          items:
+            - myColumnDropdown: null
+              myDropdown: null
+              myToggleButton2: false
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: DEV_RAW
+      materializationType: butthole
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6b9fc1b6-4f5e-42c2-befd-6a344710184f
+              stepCounter: c0cf951d-cde1-4b2a-9945-8ee5cde0c955
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKeyTest: true
+            name: STG_REGION_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a1473931-3e1a-4a87-a17a-87467dbff2e5
+              stepCounter: c0cf951d-cde1-4b2a-9945-8ee5cde0c955
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKeyTest: true
+            name: STG_REGION_anus
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 515eac21-3a64-4d5f-bfc9-3c8336dfa12c
+              stepCounter: c0cf951d-cde1-4b2a-9945-8ee5cde0c955
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: R_REGIONKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b2ce87d1-2a44-4ff5-9488-cf67d8514f6c
+                    stepCounter: 660e268a-246b-4947-8167-3eb04111c0b2
+                transform: ""
+          - columnReference:
+              columnCounter: 29c7fc66-2df7-4491-a711-1ab6a9d1153f
+              stepCounter: c0cf951d-cde1-4b2a-9945-8ee5cde0c955
+            dataType: VARCHAR(25)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: R_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 09aeeba4-001a-4a73-881a-6a7fd37e70a0
+                    stepCounter: 660e268a-246b-4947-8167-3eb04111c0b2
+                transform: ""
+          - columnReference:
+              columnCounter: be1b05cf-b96c-4fe5-9fd3-18867cd684d7
+              stepCounter: c0cf951d-cde1-4b2a-9945-8ee5cde0c955
+            dataType: VARCHAR(152)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: R_COMMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 79e09cd8-101a-4239-97c5-a073a9f00be0
+                    stepCounter: 660e268a-246b-4947-8167-3eb04111c0b2
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: WORK
+                nodeName: REGION
+            join:
+              joinCondition: FROM {{ ref('WORK', 'REGION') }} "REGION"
+            name: STG_REGION
+            noLinkRefs: []
+      name: STG_REGION
+      overrideSQL: false
+      schema: ""
+      sqlType: "1"
+      type: sql
+    stepCounter: c0cf951d-cde1-4b2a-9945-8ee5cde0c955
